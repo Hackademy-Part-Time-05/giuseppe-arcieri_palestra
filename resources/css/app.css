@@ -10,14 +10,21 @@
 
 :root {
     --main-dark: #2e2e2e;
+    --main-dark-lighter:#424242;
     --accent:#fffb00;
     --accent-dark:#fffb0095;
     --alt-accent:#ff5900;
     --alt-accent-dark:#ff5900b9;
     font-family:'Rubik';
+    --nav-height:10vh;
+    --dev-b:solid 1px yellow;
+    --nav-pad-top:2.7vh;
+    --border-nav:solid 5px var(var(--main-dark))
 }
+
 ul{padding:0%;margin:0%}
 body{margin:0px;}
+a {text-decoration: none;}
 
 .bg {
     background-color: var(--main-dark);
@@ -40,40 +47,60 @@ body{margin:0px;}
 }
 
 .nv-brand{
-    background-color:green;
-    width:25%;
+    background-color:var(--main-dark-lighter);
+    display: flex;
+    width:20%;
+    justify-content: space-between;
+    border:solid 5px var(--main-dark);
+    border-radius: 15px;
 }
 
 .nv-logo{
+    color:white;
     font-family:'Alfa Slab One';
     font-size:5vh;
-    color:white;
-    margin-inline-start: 10%;
+    /* margin-inline-start: 10%; */
     display: inline;
+    margin-inline-start: 5%;
 }
 
 .nv-logo img{
-    width:9vh;
+    width:9.5vh;
+    display:inline;
 }
 
-.nv-img{
-
+.nv-display{
+    min-width:60%;
+    text-align: center;
+    padding-top:1%
+    
+}
+.nv-display span {
+    font-family: 'Alfa Slab One';
+    font-size:7vh;
+    overflow: hidden;
+    color:white;
+    text-shadow:black 10px 10px 10px;
 }
 
 .nv-links{
-    background-color:red;
     min-width: 50%;
-    /* height:13vh; */
+    border:solid 5px var(--main-dark-lighter);
+    background-color: var(--main-dark-lighter);
+    border-radius: 15px;
 }
 
 .nv-link {
-    height: 10vh;
+    height: var(--nav-height);
     width:25%;
-    display: inline;
-    border: solid 1px yellow;    
+    display: inline;  
     text-align: center;
 }
+
 .nv-link a {
     font-size:3vh;
     color:var(--accent);
+}
+.nv-link div{
+    padding-top:var(--nav-pad-top);
 }
