@@ -1,0 +1,79 @@
+/* @import 'bootstrap'; */
+
+/*
+ *
+ *THINGS --
+ *
+ *nvlink.blade.php Ln 2: div style
+ *
+ */
+
+:root {
+    --main-dark: #2e2e2e;
+    --accent:#fffb00;
+    --accent-dark:#fffb0095;
+    --alt-accent:#ff5900;
+    --alt-accent-dark:#ff5900b9;
+    font-family:'Rubik';
+}
+ul{padding:0%;margin:0%}
+body{margin:0px;}
+
+.bg {
+    background-color: var(--main-dark);
+    border-bottom: var(--alt-accent);
+}
+
+.flexbox{
+    display: flex;
+}
+
+.space-between{
+    justify-content:space-between;
+}
+
+.nv{
+    background-color:var(--main-dark);
+    /* height: 15vh; */
+    width: 100%;
+
+}
+
+.nv-brand{
+    background-color:green;
+    width:25%;
+}
+
+.nv-logo{
+    font-family:'Alfa Slab One';
+    font-size:5vh;
+    color:white;
+    margin-inline-start: 10%;
+    display: inline;
+}
+
+.nv-logo img{
+    width:9vh;
+}
+
+.nv-img{
+
+}
+
+.nv-links{
+    background-color:red;
+    min-width: 50%;
+    /* height:13vh; */
+}
+
+.nv-link {
+    height: 10vh;
+    width:25%;
+    display: inline;
+    border: solid 1px yellow;    
+    text-align: center;
+}
+.nv-link a {
+    font-size:3vh;
+    color:var(--accent);
+}
