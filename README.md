@@ -1,4 +1,5 @@
 README
+
 Giuseppe Arcieri
 
-L'obiettivo è scrivere meno HTML possibile.
+L'obiettivo è scrivere meno possibile.
