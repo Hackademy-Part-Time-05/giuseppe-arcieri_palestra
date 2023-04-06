@@ -46,6 +46,12 @@ class Loader extends Controller
             'id'=>'3',
             'desc'=>'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis aliquid nulla labore dolorem officiis officia, pariatur, eaque ullam non iusto sapiente ab corporis atque laborum velit a! Id, quas.',
             'img'=>'https://picsum.photos/300/200'
+        ],
+        [
+            'name'=>'Zumba',
+            'id'=>'4',
+            'desc'=>'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at quaerat eum veritatis cum ea porro! Dolorum perspiciatis, non magni laboriosam fugit quod commodi veniam laudantium rerum veritatis ullam officiis.',
+            'img'=>'https://picsum.photos/300/200'
         ]
     
     
@@ -65,5 +71,12 @@ class Loader extends Controller
     }
     public function dovesiamo(){
         return view('dove-siamo');
+    }
+    public function detail($id){
+        foreach (self::$array as $item){
+            if ($item['id']==$id){
+                return view('detail',['detail'=>$item]);
+            }
+        }
     }
 }

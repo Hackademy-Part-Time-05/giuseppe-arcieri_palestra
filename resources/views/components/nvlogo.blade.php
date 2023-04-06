@@ -2,5 +2,5 @@
     <img src="{{$logo['img']}}">
 </div>
 <div class="nv-display">
-    <span>{{$logo['display']}}</span>
+    <span><a href="{{route('welcome')}}">{{$logo['display']}}</a></span>
 </div>

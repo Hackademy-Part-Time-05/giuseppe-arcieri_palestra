@@ -1,5 +1,3 @@
-<li class="nv-link">
-    <div>
-        <a href="{{$item['uri']}}">{{$item['display']}}</a>
-    </div>
-</li>
+<li class="nav-item">
+    <a class="nav-link" aria-current="page" href="{{$item['uri']}}">{{$item['display']}}</a>
+  </li>

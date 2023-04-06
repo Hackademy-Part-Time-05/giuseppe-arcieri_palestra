@@ -1,0 +1,125 @@
+/* @import 'bootstrap'; */
+
+/*
+ *
+ *THINGS --
+ *
+ *nvlink.blade.php Ln 2: div style
+ *
+ */
+
+:root {
+    --main-dark: #2e2e2e;
+    --main-dark-lighter:#424242;
+    --accent:#fffb00;
+    --accent-dark:#fffb0095;
+    --alt-accent:#ff5900;
+    --alt-accent-dark:#ff5900b9;
+    font-family:'Rubik';
+    --nav-height:10vh;
+    --dev-b:solid 1px yellow;
+    --nav-pad-top:2.7vh;
+    --border-nav:solid 5px var(var(--main-dark))
+}
+
+ul{padding:0%;margin:0%;}
+body{margin:0px;}
+a {text-decoration: none;}
+a:visited{color:white;}
+h1{
+    color:white;
+    margin:0px;
+    font-family:'Alfa Slab One';
+    font-size:10vh;
+}
+
+.bg {
+    background-color: var(--main-dark);
+    border-bottom: var(--alt-accent);
+}
+
+.flexbox{
+    display: flex;
+}
+
+.space-between{
+    justify-content:space-between;
+}
+
+.nv{
+    background-color:var(--main-dark);
+    /* height: 15vh; */
+    width: 100%;
+}
+
+.nv-brand{
+    background-color:var(--main-dark-lighter);
+    display: flex;
+    width:20%;
+    justify-content: space-between;
+    border:solid 5px var(--main-dark);
+    box-shadow:inset 4px 4px 10px;
+    border-radius: 15px;
+    margin:1%;
+}
+
+.nv-logo{
+    color:white;
+    font-family:'Alfa Slab One';
+    font-size:5vh;
+    /* margin-inline-start: 10%; */
+    display: inline;
+    margin-inline-start: 5%;
+}
+
+.nv-logo img{
+    width:9.5vh;
+    display:inline;
+}
+
+.nv-display{
+    min-width:60%;
+    text-align: center;
+    padding-top:1%
+    
+}
+.nv-display span {
+    font-family: 'Alfa Slab One';
+    font-size:7vh;
+    overflow: hidden;
+    color:white;
+    text-shadow:black 10px 10px 10px;
+}
+
+.nv-links{
+    min-width: 50%;
+    border:solid 5px var(--main-dark);
+    box-shadow: inset 4px 4px 10px;
+    background-color: var(--main-dark-lighter);
+    border-radius: 15px;
+    margin:1%;
+}
+
+.nv-link {
+    height: var(--nav-height);
+    width:25%;
+    display: inline;  
+    text-align: center;
+}
+.nv-link:hover{
+    border:solid 5px var(--alt-accent);
+    border-radius:15px;
+    box-shadow: inset 4px 4px 10px;
+}
+
+.nv-link a {
+    font-size:3vh;
+    color:var(--alt-accent);
+}
+.nv-link div{
+    padding-top:var(--nav-pad-top);
+}
+
+.welcome{
+    background-color:var(--main-dark);
+}
