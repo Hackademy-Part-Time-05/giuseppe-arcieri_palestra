@@ -52,6 +52,13 @@ class Loader extends Controller
             'id'=>'4',
             'desc'=>'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at quaerat eum veritatis cum ea porro! Dolorum perspiciatis, non magni laboriosam fugit quod commodi veniam laudantium rerum veritatis ullam officiis.',
             'img'=>'https://picsum.photos/300/200'
+        ],
+        [
+            'name'=>'Corsa',
+            'id'=>'5',
+            'desc'=>'lorem ipsum eccetera',
+            'img'=>'https://picsum.photos/300/200'
+
         ]
     
     
