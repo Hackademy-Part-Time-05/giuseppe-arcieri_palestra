@@ -9,10 +9,12 @@
     <title>Palestra</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
-  <body class="container">
+  <body class="container-fluid p-0">
 
     <x-navbar :$navbar :$logo />
-    {{$slot}}
+      <section class="">
+        {{$slot}}
+      </section>
     <x-footer />
   </body>
 </html>
